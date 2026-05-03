@@ -1,0 +1,844 @@
+{
+  "asins": {
+    "B0GWMKX9YG": {
+      "brand": "YGA Sports",
+      "is_mine": true,
+      "parent_group": "Silent Basketball",
+      "snapshots": [
+        {
+          "date": "2026-04-28",
+          "bsr_main": 13511,
+          "bsr_subcategory": 54,
+          "subcategory_name": "Basketballs",
+          "buy_box_price": 29.99,
+          "rating": 4.8,
+          "review_count": 95,
+          "is_oos": false
+        },
+        {
+          "date": "2026-04-29",
+          "bsr_main": 14955,
+          "bsr_subcategory": 58,
+          "subcategory_name": "Basketballs",
+          "buy_box_price": 29.99,
+          "rating": 4.8,
+          "review_count": 95,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-01",
+          "bsr_main": 15150,
+          "bsr_subcategory": 57,
+          "subcategory_name": "Basketballs",
+          "buy_box_price": 39.99,
+          "rating": 4.8,
+          "review_count": 95,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-02",
+          "bsr_main": 13229,
+          "bsr_subcategory": 51,
+          "subcategory_name": "Basketballs",
+          "buy_box_price": 34.99,
+          "rating": 4.8,
+          "review_count": 95,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-03",
+          "bsr_main": 17520,
+          "bsr_subcategory": 64,
+          "subcategory_name": "Basketballs",
+          "bsr_subcats": {
+            "Basketballs": 64
+          },
+          "buy_box_price": 34.99,
+          "rating": 4.8,
+          "review_count": 95,
+          "is_oos": false
+        }
+      ]
+    },
+    "B0DS25MK1T": {
+      "brand": "ALDWDY",
+      "is_mine": false,
+      "parent_group": "Silent Basketball",
+      "snapshots": [
+        {
+          "date": "2026-04-28",
+          "bsr_main": 1782,
+          "bsr_subcategory": 7,
+          "subcategory_name": "Basketballs",
+          "buy_box_price": 31.47,
+          "rating": 4.5,
+          "review_count": 757,
+          "is_oos": false
+        },
+        {
+          "date": "2026-04-29",
+          "bsr_main": 1956,
+          "bsr_subcategory": 8,
+          "subcategory_name": "Basketballs",
+          "buy_box_price": 31.47,
+          "rating": 4.5,
+          "review_count": 757,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-01",
+          "bsr_main": 2376,
+          "bsr_subcategory": 11,
+          "subcategory_name": "Basketballs",
+          "buy_box_price": 32.99,
+          "rating": 4.5,
+          "review_count": 760,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-02",
+          "bsr_main": 2222,
+          "bsr_subcategory": 11,
+          "subcategory_name": "Basketballs",
+          "buy_box_price": 32.99,
+          "rating": 4.5,
+          "review_count": 762,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-03",
+          "bsr_main": 2191,
+          "bsr_subcategory": 11,
+          "subcategory_name": "Basketballs",
+          "bsr_subcats": {
+            "Basketballs": 11
+          },
+          "buy_box_price": 32.99,
+          "rating": 4.5,
+          "review_count": 762,
+          "is_oos": false
+        }
+      ]
+    },
+    "B0FBQX1GCR": {
+      "brand": "Muted Motion",
+      "is_mine": false,
+      "parent_group": "Silent Basketball",
+      "snapshots": [
+        {
+          "date": "2026-04-28",
+          "bsr_main": 17038,
+          "bsr_subcategory": 67,
+          "subcategory_name": "Basketballs",
+          "buy_box_price": 29.99,
+          "rating": 4.7,
+          "review_count": 141,
+          "is_oos": false
+        },
+        {
+          "date": "2026-04-29",
+          "bsr_main": 16927,
+          "bsr_subcategory": 65,
+          "subcategory_name": "Basketballs",
+          "buy_box_price": 29.99,
+          "rating": 4.6,
+          "review_count": 143,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-01",
+          "bsr_main": 15418,
+          "bsr_subcategory": 59,
+          "subcategory_name": "Basketballs",
+          "buy_box_price": 29.99,
+          "rating": 4.6,
+          "review_count": 143,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-02",
+          "bsr_main": 13233,
+          "bsr_subcategory": 52,
+          "subcategory_name": "Basketballs",
+          "buy_box_price": 29.99,
+          "rating": 4.6,
+          "review_count": 143,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-03",
+          "bsr_main": 14131,
+          "bsr_subcategory": 54,
+          "subcategory_name": "Basketballs",
+          "bsr_subcats": {
+            "Basketballs": 54
+          },
+          "buy_box_price": 29.99,
+          "rating": 4.6,
+          "review_count": 144,
+          "is_oos": false
+        }
+      ]
+    },
+    "B0F6L9LJL9": {
+      "brand": "LKTNLKT",
+      "is_mine": false,
+      "parent_group": "Silent Basketball",
+      "snapshots": [
+        {
+          "date": "2026-04-28",
+          "bsr_main": 3698,
+          "bsr_subcategory": 19,
+          "subcategory_name": "Basketballs",
+          "buy_box_price": 26.99,
+          "rating": 4.6,
+          "review_count": 319,
+          "is_oos": false
+        },
+        {
+          "date": "2026-04-29",
+          "bsr_main": 3723,
+          "bsr_subcategory": 20,
+          "subcategory_name": "Basketballs",
+          "buy_box_price": 26.99,
+          "rating": 4.6,
+          "review_count": 320,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-01",
+          "bsr_main": 3339,
+          "bsr_subcategory": 19,
+          "subcategory_name": "Basketballs",
+          "buy_box_price": 26.99,
+          "rating": 4.7,
+          "review_count": 325,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-02",
+          "bsr_main": 3705,
+          "bsr_subcategory": 19,
+          "subcategory_name": "Basketballs",
+          "buy_box_price": 26.99,
+          "rating": 4.7,
+          "review_count": 327,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-03",
+          "bsr_main": 3694,
+          "bsr_subcategory": 19,
+          "subcategory_name": "Basketballs",
+          "bsr_subcats": {
+            "Basketballs": 19
+          },
+          "buy_box_price": 26.99,
+          "rating": 4.7,
+          "review_count": 326,
+          "is_oos": false
+        }
+      ]
+    },
+    "B0FLJK2HWQ": {
+      "brand": "BOUNOVA",
+      "is_mine": false,
+      "parent_group": "Silent Basketball",
+      "snapshots": [
+        {
+          "date": "2026-04-28",
+          "bsr_main": 11007,
+          "bsr_subcategory": 43,
+          "subcategory_name": "Basketballs",
+          "buy_box_price": 23.88,
+          "rating": 4.7,
+          "review_count": 253,
+          "is_oos": false
+        },
+        {
+          "date": "2026-04-29",
+          "bsr_main": 12037,
+          "bsr_subcategory": 46,
+          "subcategory_name": "Basketballs",
+          "buy_box_price": 23.88,
+          "rating": 4.7,
+          "review_count": 253,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-01",
+          "bsr_main": 8074,
+          "bsr_subcategory": 36,
+          "subcategory_name": "Basketballs",
+          "buy_box_price": 23.88,
+          "rating": 4.7,
+          "review_count": 255,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-02",
+          "bsr_main": 6406,
+          "bsr_subcategory": 27,
+          "subcategory_name": "Basketballs",
+          "buy_box_price": 23.88,
+          "rating": 4.7,
+          "review_count": 257,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-03",
+          "bsr_main": 6229,
+          "bsr_subcategory": 25,
+          "subcategory_name": "Basketballs",
+          "bsr_subcats": {
+            "Basketballs": 25
+          },
+          "buy_box_price": 23.88,
+          "rating": 4.7,
+          "review_count": 257,
+          "is_oos": false
+        }
+      ]
+    },
+    "B0G2G8NQ3Y": {
+      "brand": "BYYNNE",
+      "is_mine": false,
+      "parent_group": "Silent Basketball",
+      "snapshots": [
+        {
+          "date": "2026-04-28",
+          "bsr_main": 3960,
+          "bsr_subcategory": 21,
+          "subcategory_name": "Basketballs",
+          "buy_box_price": 29.99,
+          "rating": 4.7,
+          "review_count": 90,
+          "is_oos": false
+        },
+        {
+          "date": "2026-04-29",
+          "bsr_main": 5947,
+          "bsr_subcategory": 28,
+          "subcategory_name": "Basketballs",
+          "buy_box_price": 29.99,
+          "rating": 4.7,
+          "review_count": 91,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-01",
+          "bsr_main": 7872,
+          "bsr_subcategory": 35,
+          "subcategory_name": "Basketballs",
+          "buy_box_price": 29.99,
+          "rating": 4.8,
+          "review_count": 99,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-02",
+          "bsr_main": 7805,
+          "bsr_subcategory": 35,
+          "subcategory_name": "Basketballs",
+          "buy_box_price": 29.99,
+          "rating": 4.8,
+          "review_count": 102,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-03",
+          "bsr_main": 7266,
+          "bsr_subcategory": 30,
+          "subcategory_name": "Basketballs",
+          "bsr_subcats": {
+            "Basketballs": 30
+          },
+          "buy_box_price": 29.99,
+          "rating": 4.8,
+          "review_count": 102,
+          "is_oos": false
+        }
+      ]
+    },
+    "B0F6T2XLZR": {
+      "brand": "YGA Sports PUNCHO",
+      "is_mine": true,
+      "parent_group": "PUNCHO",
+      "snapshots": [
+        {
+          "date": "2026-04-28",
+          "bsr_main": 38036,
+          "bsr_subcategory": 9,
+          "subcategory_name": "Focus Punching Bags",
+          "buy_box_price": 29.99,
+          "rating": 4.2,
+          "review_count": 272,
+          "is_oos": false
+        },
+        {
+          "date": "2026-04-29",
+          "bsr_main": 40125,
+          "bsr_subcategory": 10,
+          "subcategory_name": "Focus Punching Bags",
+          "buy_box_price": 29.99,
+          "rating": 4.2,
+          "review_count": 272,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-01",
+          "bsr_main": 42491,
+          "bsr_subcategory": 12,
+          "subcategory_name": "Focus Punching Bags",
+          "buy_box_price": 32.99,
+          "rating": 4.2,
+          "review_count": 272,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-02",
+          "bsr_main": 50742,
+          "bsr_subcategory": 11,
+          "subcategory_name": "Focus Punching Bags",
+          "buy_box_price": 32.99,
+          "rating": 4.2,
+          "review_count": 272,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-03",
+          "bsr_main": 51440,
+          "bsr_subcategory": 13,
+          "subcategory_name": "Focus Punching Bags",
+          "bsr_subcats": {
+            "Focus Punching Bags": 13
+          },
+          "buy_box_price": 32.99,
+          "rating": 4.2,
+          "review_count": 272,
+          "is_oos": false
+        }
+      ]
+    },
+    "B0BKPM69F8": {
+      "brand": "Dino QPAU",
+      "is_mine": false,
+      "parent_group": "PUNCHO",
+      "snapshots": [
+        {
+          "date": "2026-04-28",
+          "bsr_main": 1588,
+          "bsr_subcategory": 1,
+          "subcategory_name": "Pedestal Punching Bags",
+          "buy_box_price": 29.74,
+          "rating": 4.5,
+          "review_count": 2752,
+          "is_oos": false
+        },
+        {
+          "date": "2026-04-29",
+          "bsr_main": 1582,
+          "bsr_subcategory": 1,
+          "subcategory_name": "Pedestal Punching Bags",
+          "buy_box_price": 29.74,
+          "rating": 4.5,
+          "review_count": 2758,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-01",
+          "bsr_main": 1561,
+          "bsr_subcategory": 1,
+          "subcategory_name": "Pedestal Punching Bags",
+          "buy_box_price": 34.99,
+          "rating": 4.5,
+          "review_count": 2776,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-02",
+          "bsr_main": 1621,
+          "bsr_subcategory": 1,
+          "subcategory_name": "Pedestal Punching Bags",
+          "buy_box_price": 34.99,
+          "rating": 4.5,
+          "review_count": 2777,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-03",
+          "bsr_main": 1788,
+          "bsr_subcategory": 1,
+          "subcategory_name": "Pedestal Punching Bags",
+          "bsr_subcats": {
+            "Pedestal Punching Bags": 1
+          },
+          "buy_box_price": 34.99,
+          "rating": 4.5,
+          "review_count": 2779,
+          "is_oos": false
+        }
+      ]
+    },
+    "B0D6QT1WYS": {
+      "brand": "Red QPAU",
+      "is_mine": false,
+      "parent_group": "PUNCHO",
+      "snapshots": [
+        {
+          "date": "2026-04-28",
+          "bsr_main": 6882,
+          "bsr_subcategory": 2,
+          "subcategory_name": "Focus Punching Bags",
+          "buy_box_price": 35.99,
+          "rating": 4.2,
+          "review_count": 1909,
+          "is_oos": false
+        },
+        {
+          "date": "2026-04-29",
+          "bsr_main": 7568,
+          "bsr_subcategory": 2,
+          "subcategory_name": "Focus Punching Bags",
+          "buy_box_price": 35.99,
+          "rating": 4.2,
+          "review_count": 1909,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-01",
+          "bsr_main": 8813,
+          "bsr_subcategory": 2,
+          "subcategory_name": "Focus Punching Bags",
+          "buy_box_price": 32.99,
+          "rating": 4.2,
+          "review_count": 1913,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-02",
+          "bsr_main": 8514,
+          "bsr_subcategory": 2,
+          "subcategory_name": "Focus Punching Bags",
+          "buy_box_price": 32.99,
+          "rating": 4.2,
+          "review_count": 1914,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-03",
+          "bsr_main": 6240,
+          "bsr_subcategory": 2,
+          "subcategory_name": "Focus Punching Bags",
+          "bsr_subcats": {
+            "Focus Punching Bags": 2
+          },
+          "buy_box_price": 32.99,
+          "rating": 4.2,
+          "review_count": 1914,
+          "is_oos": false
+        }
+      ]
+    },
+    "B0DFMMFMYC": {
+      "brand": "360 QPAU",
+      "is_mine": false,
+      "parent_group": "PUNCHO",
+      "snapshots": [
+        {
+          "date": "2026-04-28",
+          "bsr_main": 22933,
+          "bsr_subcategory": 7,
+          "subcategory_name": "Focus Punching Bags",
+          "buy_box_price": 25.99,
+          "rating": 4.3,
+          "review_count": 1009,
+          "is_oos": false
+        },
+        {
+          "date": "2026-04-29",
+          "bsr_main": 21586,
+          "bsr_subcategory": 7,
+          "subcategory_name": "Focus Punching Bags",
+          "buy_box_price": 35.99,
+          "rating": 4.3,
+          "review_count": 1010,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-01",
+          "bsr_main": 20093,
+          "bsr_subcategory": 7,
+          "subcategory_name": "Focus Punching Bags",
+          "buy_box_price": 39.99,
+          "rating": 4.3,
+          "review_count": 1011,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-02",
+          "bsr_main": 17505,
+          "bsr_subcategory": 7,
+          "subcategory_name": "Focus Punching Bags",
+          "buy_box_price": 39.99,
+          "rating": 4.3,
+          "review_count": 1011,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-03",
+          "bsr_main": 14218,
+          "bsr_subcategory": 7,
+          "subcategory_name": "Focus Punching Bags",
+          "bsr_subcats": {
+            "Focus Punching Bags": 7
+          },
+          "buy_box_price": 39.99,
+          "rating": 4.3,
+          "review_count": 1012,
+          "is_oos": false
+        }
+      ]
+    },
+    "B0FHW391BS": {
+      "brand": "HopeRock",
+      "is_mine": false,
+      "parent_group": "PUNCHO",
+      "snapshots": [
+        {
+          "date": "2026-04-28",
+          "bsr_main": 3093,
+          "bsr_subcategory": 1,
+          "subcategory_name": "Focus Punching Bags",
+          "buy_box_price": 55.99,
+          "rating": 4.2,
+          "review_count": 281,
+          "is_oos": false
+        },
+        {
+          "date": "2026-04-29",
+          "bsr_main": 3269,
+          "bsr_subcategory": 1,
+          "subcategory_name": "Focus Punching Bags",
+          "buy_box_price": 55.99,
+          "rating": 4.2,
+          "review_count": 281,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-01",
+          "bsr_main": 2439,
+          "bsr_subcategory": 1,
+          "subcategory_name": "Focus Punching Bags",
+          "buy_box_price": 55.99,
+          "rating": 4.2,
+          "review_count": 285,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-02",
+          "bsr_main": 2443,
+          "bsr_subcategory": 1,
+          "subcategory_name": "Focus Punching Bags",
+          "buy_box_price": 55.99,
+          "rating": 4.2,
+          "review_count": 285,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-03",
+          "bsr_main": 2202,
+          "bsr_subcategory": 1,
+          "subcategory_name": "Focus Punching Bags",
+          "bsr_subcats": {
+            "Focus Punching Bags": 1
+          },
+          "buy_box_price": 55.99,
+          "rating": 4.2,
+          "review_count": 286,
+          "is_oos": false
+        }
+      ]
+    },
+    "B09JVGBFKH": {
+      "brand": "MARWAN",
+      "is_mine": false,
+      "parent_group": "PUNCHO",
+      "snapshots": [
+        {
+          "date": "2026-04-28",
+          "bsr_main": 2012,
+          "bsr_subcategory": 1,
+          "subcategory_name": "Heavy Punching Bags",
+          "buy_box_price": 42.99,
+          "rating": 4.2,
+          "review_count": 2678,
+          "is_oos": false
+        },
+        {
+          "date": "2026-04-29",
+          "bsr_main": 2124,
+          "bsr_subcategory": 1,
+          "subcategory_name": "Heavy Punching Bags",
+          "buy_box_price": 42.99,
+          "rating": 4.2,
+          "review_count": 2680,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-01",
+          "bsr_main": 2003,
+          "bsr_subcategory": 1,
+          "subcategory_name": "Heavy Punching Bags",
+          "buy_box_price": 42.99,
+          "rating": 4.2,
+          "review_count": 2689,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-02",
+          "bsr_main": 1867,
+          "bsr_subcategory": 1,
+          "subcategory_name": "Heavy Punching Bags",
+          "buy_box_price": 42.99,
+          "rating": 4.2,
+          "review_count": 2691,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-03",
+          "bsr_main": 2030,
+          "bsr_subcategory": 1,
+          "subcategory_name": "Heavy Punching Bags",
+          "bsr_subcats": {
+            "Heavy Punching Bags": 1
+          },
+          "buy_box_price": 42.99,
+          "rating": 4.2,
+          "review_count": 2691,
+          "is_oos": false
+        }
+      ]
+    },
+    "B0GNTJ9THL": {
+      "brand": "YGA Sports CHOMPY",
+      "is_mine": true,
+      "parent_group": "CHOMPY",
+      "snapshots": [
+        {
+          "date": "2026-04-28",
+          "bsr_main": 26675,
+          "bsr_subcategory": 11,
+          "subcategory_name": "Pedestal Punching Bags",
+          "buy_box_price": 32.99,
+          "rating": 4.5,
+          "review_count": 28,
+          "is_oos": false
+        },
+        {
+          "date": "2026-04-29",
+          "bsr_main": 26914,
+          "bsr_subcategory": 10,
+          "subcategory_name": "Pedestal Punching Bags",
+          "buy_box_price": 32.99,
+          "rating": 4.5,
+          "review_count": 28,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-01",
+          "bsr_main": 29527,
+          "bsr_subcategory": 11,
+          "subcategory_name": "Pedestal Punching Bags",
+          "buy_box_price": 31.99,
+          "rating": 4.5,
+          "review_count": 29,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-02",
+          "bsr_main": 27163,
+          "bsr_subcategory": 12,
+          "subcategory_name": "Pedestal Punching Bags",
+          "buy_box_price": 31.99,
+          "rating": 4.6,
+          "review_count": 31,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-03",
+          "bsr_main": 28779,
+          "bsr_subcategory": 11,
+          "subcategory_name": "Pedestal Punching Bags",
+          "bsr_subcats": {
+            "Pedestal Punching Bags": 11
+          },
+          "buy_box_price": 31.99,
+          "rating": 4.6,
+          "review_count": 31,
+          "is_oos": false
+        }
+      ]
+    },
+    "B0FS1341NF": {
+      "brand": "NIBBaNACAL",
+      "is_mine": false,
+      "parent_group": "CHOMPY",
+      "snapshots": [
+        {
+          "date": "2026-04-28",
+          "bsr_main": 37073,
+          "bsr_subcategory": 15,
+          "subcategory_name": "Pedestal Punching Bags",
+          "buy_box_price": 26.98,
+          "rating": 4.2,
+          "review_count": 102,
+          "is_oos": false
+        },
+        {
+          "date": "2026-04-29",
+          "bsr_main": 32802,
+          "bsr_subcategory": 12,
+          "subcategory_name": "Pedestal Punching Bags",
+          "buy_box_price": 26.98,
+          "rating": 4.2,
+          "review_count": 102,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-01",
+          "bsr_main": 30946,
+          "bsr_subcategory": 12,
+          "subcategory_name": "Pedestal Punching Bags",
+          "buy_box_price": 26.99,
+          "rating": 4.2,
+          "review_count": 102,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-02",
+          "bsr_main": 24766,
+          "bsr_subcategory": 9,
+          "subcategory_name": "Pedestal Punching Bags",
+          "buy_box_price": 26.99,
+          "rating": 4.2,
+          "review_count": 104,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-03",
+          "bsr_main": 28069,
+          "bsr_subcategory": 10,
+          "subcategory_name": "Pedestal Punching Bags",
+          "bsr_subcats": {
+            "Pedestal Punching Bags": 10
+          },
+          "buy_box_price": 26.99,
+          "rating": 4.2,
+          "review_count": 104,
+          "is_oos": false
+        }
+      ]
+    }
+  }
+}
