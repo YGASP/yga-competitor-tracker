@@ -322,7 +322,7 @@ def _placeholder():
             }
     return data
 
-@st.cache_data(ttl=60)
+@st.cache_data
 def load_data():
     if DATA_FILE.exists():
         with open(DATA_FILE, encoding="utf-8") as f:
