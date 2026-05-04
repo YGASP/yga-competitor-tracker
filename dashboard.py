@@ -258,7 +258,7 @@ GROUPS = [
         "id": "puncho",
         "name": "PUNCHO",
         "icon": "🥷",
-        "target_subcategory": "Focus Bags",
+        "target_subcategory": "Focus Punching Bags",
         "asins": [
             {"asin": "B0F6T2XLZR", "brand": "YGA Sports PUNCHO", "is_mine": True},
             {"asin": "B0BKPM69F8", "brand": "Dino QPAU"},
