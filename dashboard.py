@@ -1,9 +1,14 @@
+import sys, os
+print(f"[YGA] Python {sys.version} | cwd={os.getcwd()}", flush=True)
+
 import streamlit as st
 import json
 import plotly.graph_objects as go
 from pathlib import Path
 from datetime import date, timedelta
 import random
+
+print("[YGA] imports OK", flush=True)
 
 st.set_page_config(
     page_title="YGA Competitor Tracker",
@@ -322,7 +327,6 @@ def _placeholder():
             }
     return data
 
-@st.cache_data
 def load_data():
     if DATA_FILE.exists():
         with open(DATA_FILE, encoding="utf-8") as f:
