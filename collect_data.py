@@ -317,6 +317,7 @@ def _git_push():
             ["git", "commit", "-m", f"data: {TODAY}"],
             cwd=repo, check=True,
         )
+        subprocess.run(["git", "pull", "--rebase", "--autostash"], cwd=repo, check=True)
         subprocess.run(["git", "push"], cwd=repo, check=True)
         print("✅  Pushed to GitHub — dashboard updated.\n")
     except subprocess.CalledProcessError as e:
