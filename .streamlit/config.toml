@@ -6,7 +6,8 @@ textColor = "#cdd9e5"
 font = "sans serif"
 
 [server]
-headless = false
+headless = true
+fileWatcherType = "none"
 
 [browser]
 gatherUsageStats = false
