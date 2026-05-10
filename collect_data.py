@@ -13,6 +13,10 @@ import sys
 from datetime import date
 from pathlib import Path
 
+# Fix Unicode encoding for Windows Hebrew terminals and scheduled tasks
+sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+sys.stderr.reconfigure(encoding='utf-8', errors='replace')
+
 from playwright.async_api import async_playwright, TimeoutError as PWTimeout
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
