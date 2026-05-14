@@ -1,68 +1,90 @@
 @echo off
 echo ============================================
-echo   YGA Competitor Tracker — Scheduler Setup
+echo   YGA Competitor Tracker - Scheduler Setup
 echo ============================================
 echo.
 
-set TASK_NAME=YGA_Competitor_Tracker
+set TASK_COLLECT=YGA_Competitor_Tracker
+set TASK_HEALTH=YGA_Health_Check
 set SCRIPT_DIR=%~dp0
-set SCRIPT_PATH=%SCRIPT_DIR%collect_data.py
-set LOG_PATH=%SCRIPT_DIR%collect_log.txt
-set BAT_PATH=%SCRIPT_DIR%run_collect_scheduled.bat
+set COLLECT_PY=%SCRIPT_DIR%collect_data.py
+set HEALTH_PY=%SCRIPT_DIR%health_check.py
+set COLLECT_LOG=%SCRIPT_DIR%collect_log.txt
+set HEALTH_LOG=%SCRIPT_DIR%health_check_log.txt
+set COLLECT_BAT=%SCRIPT_DIR%run_collect_scheduled.bat
+set HEALTH_BAT=%SCRIPT_DIR%run_health_check.bat
 
-REM ── Find the full path to python.exe ─────────────────────────────────────────
+REM ── Find Python ──────────────────────────────────────────────────────────────
 set PYTHON_PATH=
 for /f "tokens=* delims=" %%P in ('where python 2^>nul') do (
     if not defined PYTHON_PATH set "PYTHON_PATH=%%P"
 )
 if not defined PYTHON_PATH (
-    for /f "tokens=* delims=" %%P in ('where py 2^>nul') do (
-        if not defined PYTHON_PATH set "PYTHON_PATH=%%P"
-    )
-)
-if not defined PYTHON_PATH (
     echo [ERROR] Python not found in PATH.
-    echo Please install Python and add it to PATH, then re-run this script.
     pause
     exit /b 1
 )
 echo Found Python: %PYTHON_PATH%
-echo Script:       %SCRIPT_PATH%
-echo Log:          %LOG_PATH%
 echo.
 
-REM ── Write full Python path into run_collect_scheduled.bat ─────────────────────
-REM    Task Scheduler does NOT inherit user PATH, so we bake in the absolute path.
+REM ── Write run_collect_scheduled.bat ──────────────────────────────────────────
 (
     echo @echo off
+    echo set PYTHONIOENCODING=utf-8
+    echo set PYTHONUTF8=1
     echo cd /d "%SCRIPT_DIR%"
-    echo "%PYTHON_PATH%" "%SCRIPT_PATH%" --headless ^>^> "%LOG_PATH%" 2^>^&1
-) > "%BAT_PATH%"
-echo Updated: %BAT_PATH%
+    echo "%PYTHON_PATH%" -X utf8 "%COLLECT_PY%" --headless ^>^> "%COLLECT_LOG%" 2^>^&1
+) > "%COLLECT_BAT%"
+echo Updated: %COLLECT_BAT%
+
+REM ── Write run_health_check.bat ───────────────────────────────────────────────
+(
+    echo @echo off
+    echo set PYTHONIOENCODING=utf-8
+    echo set PYTHONUTF8=1
+    echo cd /d "%SCRIPT_DIR%"
+    echo "%PYTHON_PATH%" -X utf8 "%HEALTH_PY%" ^>^> "%HEALTH_LOG%" 2^>^&1
+) > "%HEALTH_BAT%"
+echo Updated: %HEALTH_BAT%
 echo.
 
-REM ── Remove old task if it exists, then create fresh ──────────────────────────
-schtasks /delete /tn "%TASK_NAME%" /f > nul 2>&1
+REM ── Remove old tasks ─────────────────────────────────────────────────────────
+schtasks /delete /tn "%TASK_COLLECT%" /f > nul 2>&1
+schtasks /delete /tn "%TASK_HEALTH%"  /f > nul 2>&1
 
+REM ── Task 1: Data collection at 08:00 (current user, no SYSTEM needed) ────────
 schtasks /create ^
-  /tn "%TASK_NAME%" ^
-  /tr "cmd /c \"%BAT_PATH%\"" ^
+  /tn "%TASK_COLLECT%" ^
+  /tr "cmd /c \"%COLLECT_BAT%\"" ^
   /sc daily ^
   /st 08:00 ^
-  /ru "%USERNAME%" ^
-  /rl HIGHEST ^
   /f
 
-echo.
 if %ERRORLEVEL%==0 (
-    echo [SUCCESS] Task '%TASK_NAME%' will run every day at 08:00.
-    echo.
-    echo To test immediately:  schtasks /run /tn "%TASK_NAME%"
-    echo To check the log:     type "%LOG_PATH%"
-    echo To verify the task:   schtasks /query /tn "%TASK_NAME%" /fo LIST
+    echo [OK] Task '%TASK_COLLECT%' - runs daily at 08:00
 ) else (
-    echo [ERROR] Could not create scheduled task.
-    echo Right-click this file and choose "Run as administrator".
+    echo [ERROR] Could not create %TASK_COLLECT%
 )
+
+REM ── Task 2: Health check + email at 09:00 ────────────────────────────────────
+schtasks /create ^
+  /tn "%TASK_HEALTH%" ^
+  /tr "cmd /c \"%HEALTH_BAT%\"" ^
+  /sc daily ^
+  /st 09:00 ^
+  /f
+
+if %ERRORLEVEL%==0 (
+    echo [OK] Task '%TASK_HEALTH%' - runs daily at 09:00
+) else (
+    echo [ERROR] Could not create %TASK_HEALTH%
+)
+
+echo.
+echo ============================================
+echo   Done. Both tasks registered.
+echo   08:00  Data collection
+echo   09:00  Health check + email report
+echo ============================================
 echo.
 pause

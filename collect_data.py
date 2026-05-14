@@ -205,7 +205,7 @@ def append_snapshot(data: dict, asin_meta: dict, snapshot: dict):
 
 # ─── ALERTS SUMMARY ───────────────────────────────────────────────────────────
 def print_alerts(data: dict):
-    print("\n─── ALERTS ──────────────────────────────────────────")
+    print("\n--- ALERTS ---------------------------------------------------")
     found = False
     groups = {}
     for item in ASINS:
@@ -222,7 +222,7 @@ def print_alerts(data: dict):
             if recent and week_ago:
                 pct = (recent - week_ago) / week_ago * 100
                 if pct >= 25:
-                    print(f"🔴  [{group_name}] Your BSR worsened {pct:.0f}% ({week_ago:,} → {recent:,})")
+                    print(f"[!] [{group_name}] Your BSR worsened {pct:.0f}% ({week_ago:,} -> {recent:,})")
                     found = True
         for item in members:
             if item.get("is_mine"):
@@ -235,11 +235,11 @@ def print_alerts(data: dict):
                               1 for s in snaps[-8:-1] if s["buy_box_price"]))
                 if today_p and avg7 and (avg7 - today_p) / avg7 * 100 >= 10:
                     pct = (avg7 - today_p) / avg7 * 100
-                    print(f"🟡  [{group_name}] {item['brand']} dropped price {pct:.0f}% (${avg7:.2f} → ${today_p:.2f})")
+                    print(f"[?] [{group_name}] {item['brand']} dropped price {pct:.0f}% (${avg7:.2f} -> ${today_p:.2f})")
                     found = True
     if not found:
-        print("✅  No alerts today.")
-    print("─────────────────────────────────────────────────────\n")
+        print("[OK] No alerts today.")
+    print("--------------------------------------------------------------\n")
 
 
 # ─── MAIN ─────────────────────────────────────────────────────────────────────
@@ -250,7 +250,7 @@ async def main():
     headless = args.headless
 
     print(f"\n{'='*55}")
-    print(f"  YGA Competitor Tracker — {TODAY}")
+    print(f"  YGA Competitor Tracker - {TODAY}")
     print(f"  Mode: {'headless' if headless else 'visible'}")
     print(f"{'='*55}\n")
 
@@ -303,7 +303,7 @@ async def main():
         await browser.close()
 
     print_alerts(data)
-    print(f"✅  Done. Data saved to {DATA_FILE}\n")
+    print(f"[OK] Done. Data saved to {DATA_FILE}\n")
     _git_push()
 
 
@@ -315,7 +315,7 @@ def _git_push():
             ["git", "diff", "--cached", "--quiet"], cwd=repo
         )
         if result.returncode == 0:
-            print("ℹ️   No changes to push (data unchanged).\n")
+            print("[i]  No changes to push (data unchanged).\n")
             return
         subprocess.run(
             ["git", "commit", "-m", f"data: {TODAY}"],
@@ -323,9 +323,9 @@ def _git_push():
         )
         subprocess.run(["git", "pull", "--rebase", "--autostash"], cwd=repo, check=True)
         subprocess.run(["git", "push"], cwd=repo, check=True)
-        print("✅  Pushed to GitHub — dashboard updated.\n")
+        print("[OK] Pushed to GitHub - dashboard updated.\n")
     except subprocess.CalledProcessError as e:
-        print(f"⚠️   Git push failed: {e}\n")
+        print(f"[!]  Git push failed: {e}\n")
 
 
 if __name__ == "__main__":
