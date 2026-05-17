@@ -52,12 +52,21 @@ async def scrape_asin(page, asin: str, brand: str) -> dict:
     url = f"https://www.amazon.com/dp/{asin}?th=1&psc=1"
     print(f"  >> {brand} ({asin})")
 
-    try:
-        await page.goto(url, wait_until="domcontentloaded", timeout=30_000)
-        await page.wait_for_timeout(2_500)
-    except PWTimeout:
-        print(f"     TIMEOUT loading page")
-        return _empty_snapshot()
+    for attempt in range(2):
+        try:
+            await page.goto(url, wait_until="domcontentloaded", timeout=30_000)
+            await page.wait_for_timeout(2_500)
+            break
+        except PWTimeout:
+            print(f"     TIMEOUT loading page")
+            return _empty_snapshot()
+        except Exception as e:
+            if attempt == 0:
+                print(f"     Navigation error, retrying... ({e})")
+                await page.wait_for_timeout(3_000)
+            else:
+                print(f"     Navigation error, skipping. ({e})")
+                return _empty_snapshot()
 
     # ── CAPTCHA check ──────────────────────────────────────────────────────
     if await page.locator("form[action='/errors/validateCaptcha']").count():
