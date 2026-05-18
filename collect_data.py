@@ -48,7 +48,18 @@ ASINS = [
 ]
 
 # ─── SCRAPER ──────────────────────────────────────────────────────────────────
-async def scrape_asin(page, asin: str, brand: str) -> dict:
+async def warm_up_session(page):
+    """Visit amazon.com homepage first to establish a session and avoid CAPTCHA on first product page."""
+    print("  [warm-up] Visiting amazon.com to establish session...")
+    try:
+        await page.goto("https://www.amazon.com", wait_until="domcontentloaded", timeout=30_000)
+        await page.wait_for_timeout(random.uniform(4_000, 7_000))
+        print("  [warm-up] Done.")
+    except Exception as e:
+        print(f"  [warm-up] Failed (continuing anyway): {e}")
+
+
+async def scrape_asin(page, asin: str, brand: str, headless: bool = True) -> dict:
     url = f"https://www.amazon.com/dp/{asin}?th=1&psc=1"
     print(f"  >> {brand} ({asin})")
 
@@ -70,13 +81,26 @@ async def scrape_asin(page, asin: str, brand: str) -> dict:
 
     # ── CAPTCHA check ──────────────────────────────────────────────────────
     if await page.locator("form[action='/errors/validateCaptcha']").count():
-        print("     CAPTCHA! Solve it in the browser window. Waiting 60s...")
-        try:
-            await page.wait_for_url(lambda u: "captcha" not in u, timeout=60_000)
-            await page.wait_for_timeout(2_000)
-        except PWTimeout:
-            print("     CAPTCHA not solved in time, skipping.")
-            return _empty_snapshot()
+        if headless:
+            # In headless/cloud mode: wait and retry up to 3 times
+            for captcha_attempt in range(3):
+                print(f"     CAPTCHA detected, waiting 10s and retrying ({captcha_attempt+1}/3)...")
+                await page.wait_for_timeout(10_000)
+                await page.goto(url, wait_until="domcontentloaded", timeout=30_000)
+                await page.wait_for_timeout(3_000)
+                if not await page.locator("form[action='/errors/validateCaptcha']").count():
+                    break
+            if await page.locator("form[action='/errors/validateCaptcha']").count():
+                print("     CAPTCHA not resolved after retries, skipping.")
+                return _empty_snapshot()
+        else:
+            print("     CAPTCHA! Solve it in the browser window. Waiting 60s...")
+            try:
+                await page.wait_for_url(lambda u: "captcha" not in u, timeout=60_000)
+                await page.wait_for_timeout(2_000)
+            except PWTimeout:
+                print("     CAPTCHA not solved in time, skipping.")
+                return _empty_snapshot()
 
     # ── BSR ────────────────────────────────────────────────────────────────
     bsr_main    = None
@@ -301,8 +325,10 @@ async def main():
         ])
         page = await ctx.new_page()
 
+        await warm_up_session(page)
+
         for item in to_fetch:
-            snapshot = await scrape_asin(page, item["asin"], item["brand"])
+            snapshot = await scrape_asin(page, item["asin"], item["brand"], headless=headless)
             # Add snapshot to all groups this ASIN belongs to
             for meta in ASINS:
                 if meta["asin"] == item["asin"]:
