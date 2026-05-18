@@ -5,6 +5,7 @@ If collection fails, sends a failure alert.
 """
 
 import json
+import os
 import smtplib
 import subprocess
 import sys
@@ -15,7 +16,7 @@ from pathlib import Path
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
 GMAIL_USER     = "yg.amigoss@gmail.com"
-GMAIL_APP_PASS = "eulmxoectnbkncwq"
+GMAIL_APP_PASS = os.environ.get("GMAIL_APP_PASS", "eulmxoectnbkncwq")
 TO_EMAIL       = "yg.amigoss@gmail.com"
 
 BASE_DIR   = Path(__file__).parent

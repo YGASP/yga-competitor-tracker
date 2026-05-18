@@ -254,9 +254,11 @@ def print_alerts(data: dict):
 # ─── MAIN ─────────────────────────────────────────────────────────────────────
 async def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--headless", action="store_true", help="Run browser headlessly (for scheduled tasks)")
+    parser.add_argument("--headless", action="store_true", help="Run browser headlessly")
+    parser.add_argument("--no-push", action="store_true", help="Skip git push (used by GitHub Actions)")
     args = parser.parse_args()
-    headless = args.headless
+    headless  = args.headless
+    no_push   = args.no_push
 
     print(f"\n{'='*55}")
     print(f"  YGA Competitor Tracker - {TODAY}")
@@ -313,7 +315,8 @@ async def main():
 
     print_alerts(data)
     print(f"[OK] Done. Data saved to {DATA_FILE}\n")
-    _git_push()
+    if not no_push:
+        _git_push()
 
 
 def _git_push():

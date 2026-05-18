@@ -1,0 +1,63 @@
+name: YGA Daily Competitor Collection
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # 09:00 Israel time (UTC+3)
+  workflow_dispatch:        # Manual trigger from GitHub UI
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+
+      - name: Collect competitor data
+        run: python collect_data.py --headless --no-push
+
+      - name: Commit and push data
+        run: |
+          git config user.name  "YGA Bot"
+          git config user.email "actions@github.com"
+          git add competitor_history.json
+          git diff --cached --quiet && echo "No new data" || git commit -m "data: $(date +%Y-%m-%d)"
+          git push
+
+      - name: Send success email
+        if: success()
+        env:
+          GMAIL_APP_PASS: ${{ secrets.GMAIL_APP_PASS }}
+        run: python health_check.py
+
+      - name: Send failure email
+        if: failure()
+        env:
+          GMAIL_APP_PASS: ${{ secrets.GMAIL_APP_PASS }}
+        run: |
+          python - <<'EOF'
+          import os, smtplib
+          from datetime import date
+          from email.mime.text import MIMEText
+          user = "yg.amigoss@gmail.com"
+          pw   = os.environ["GMAIL_APP_PASS"]
+          msg  = MIMEText(f"<h2>YGA Tracker FAILED - {date.today()}</h2><p>GitHub Actions workflow failed. Check the logs: https://github.com/YGASP/yga-competitor-tracker/actions</p>", "html", "utf-8")
+          msg["Subject"] = f"[YGA] FAILED to collect data - {date.today()}"
+          msg["From"] = user
+          msg["To"]   = user
+          with smtplib.SMTP("smtp.gmail.com", 587) as s:
+              s.starttls(); s.login(user, pw); s.sendmail(user, user, msg.as_bytes())
+          print("Failure email sent.")
+          EOF
