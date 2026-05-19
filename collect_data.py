@@ -292,13 +292,27 @@ def main():
     except Exception:
         print("  [warm-up] Skipped.\n")
 
+    failed = []
     for item in to_fetch:
         snapshot = scrape_asin(session, item["asin"], item["brand"])
         for meta in ASINS:
             if meta["asin"] == item["asin"]:
                 append_snapshot(data, meta, dict(snapshot))
         save_history(data)
+        if snapshot["bsr_main"] is None and snapshot["buy_box_price"] is None:
+            failed.append(item)
         time.sleep(random.uniform(4, 8))
+
+    if failed:
+        print(f"\n  [retry] {len(failed)} ASINs got no data, retrying after warm session...")
+        time.sleep(random.uniform(10, 15))
+        for item in failed:
+            snapshot = scrape_asin(session, item["asin"], item["brand"])
+            for meta in ASINS:
+                if meta["asin"] == item["asin"]:
+                    append_snapshot(data, meta, dict(snapshot))
+            save_history(data)
+            time.sleep(random.uniform(4, 8))
 
     print_alerts(data)
     print(f"[OK] Done. Data saved to {DATA_FILE}\n")
