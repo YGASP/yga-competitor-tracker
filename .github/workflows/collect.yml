@@ -24,12 +24,10 @@ jobs:
           cache: 'pip'
 
       - name: Install dependencies
-        run: |
-          pip install playwright
-          playwright install --with-deps chromium
+        run: pip install curl_cffi beautifulsoup4
 
       - name: Collect competitor data
-        run: python collect_data.py --headless --no-push
+        run: python collect_data.py --no-push
 
       - name: Commit and push data
         run: |
