@@ -52,12 +52,12 @@ REM ── Remove old tasks ─────────────────�
 schtasks /delete /tn "%TASK_COLLECT%" /f > nul 2>&1
 schtasks /delete /tn "%TASK_HEALTH%"  /f > nul 2>&1
 
-REM ── Task 1: Data collection at 08:00 (current user, no SYSTEM needed) ────────
+REM ── Task 1: Data collection every hour (skips if already done today) ────────
 schtasks /create ^
   /tn "%TASK_COLLECT%" ^
   /tr "cmd /c \"%COLLECT_BAT%\"" ^
-  /sc daily ^
-  /st 08:00 ^
+  /sc hourly ^
+  /st 07:00 ^
   /f
 
 if %ERRORLEVEL%==0 (

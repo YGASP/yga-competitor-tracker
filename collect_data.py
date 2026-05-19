@@ -270,6 +270,17 @@ def main():
 
     data = load_history()
 
+    # Skip if already collected valid data today
+    if not args.no_push:
+        already = sum(
+            1 for asin_data in data["asins"].values()
+            for s in asin_data["snapshots"]
+            if s["date"] == TODAY and s["bsr_main"] is not None
+        )
+        if already >= 10:
+            print(f"[OK] Already have data for {TODAY} ({already} ASINs). Skipping.\n")
+            return
+
     seen, to_fetch = {}, []
     for item in ASINS:
         if item["asin"] not in seen:
