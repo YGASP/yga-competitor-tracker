@@ -2400,7 +2400,7 @@
           "bsr_subcategory": null,
           "subcategory_name": null,
           "bsr_subcats": {},
-          "buy_box_price": 28.99,
+          "buy_box_price": 27.99,
           "rating": 4.6,
           "review_count": 40,
           "is_oos": false
@@ -2582,7 +2582,7 @@
         },
         {
           "date": "2026-05-20",
-          "bsr_main": 44480,
+          "bsr_main": 44479,
           "bsr_subcategory": null,
           "subcategory_name": null,
           "bsr_subcats": {},
