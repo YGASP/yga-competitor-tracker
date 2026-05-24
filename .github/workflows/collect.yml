@@ -1,9 +1,7 @@
 name: YGA Daily Competitor Collection
 
 on:
-  schedule:
-    - cron: '0 6 * * *'   # 09:00 Israel time (UTC+3)
-  workflow_dispatch:        # Manual trigger from GitHub UI
+  workflow_dispatch:        # Manual trigger only — collection runs locally
 
 permissions:
   contents: write
