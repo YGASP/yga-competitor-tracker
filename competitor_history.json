@@ -216,13 +216,13 @@
         },
         {
           "date": "2026-05-25",
-          "bsr_main": 10877,
+          "bsr_main": 10876,
           "bsr_subcategory": null,
           "subcategory_name": null,
           "bsr_subcats": {},
-          "buy_box_price": 29.99,
+          "buy_box_price": 32.99,
           "rating": 4.8,
-          "review_count": 92,
+          "review_count": 91,
           "is_oos": false
         }
       ]
