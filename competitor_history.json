@@ -213,6 +213,17 @@
           "rating": 4.8,
           "review_count": 92,
           "is_oos": false
+        },
+        {
+          "date": "2026-05-25",
+          "bsr_main": 10877,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": 29.99,
+          "rating": 4.8,
+          "review_count": 92,
+          "is_oos": false
         }
       ]
     },
@@ -422,6 +433,17 @@
         {
           "date": "2026-05-24",
           "bsr_main": 1931,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": 31.47,
+          "rating": 4.5,
+          "review_count": 770,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-25",
+          "bsr_main": 1716,
           "bsr_subcategory": null,
           "subcategory_name": null,
           "bsr_subcats": {},
@@ -645,6 +667,17 @@
           "rating": 4.6,
           "review_count": 158,
           "is_oos": false
+        },
+        {
+          "date": "2026-05-25",
+          "bsr_main": null,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": null,
+          "rating": null,
+          "review_count": null,
+          "is_oos": false
         }
       ]
     },
@@ -861,6 +894,17 @@
           "buy_box_price": 29.99,
           "rating": 4.7,
           "review_count": 329,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-25",
+          "bsr_main": null,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": null,
+          "rating": null,
+          "review_count": null,
           "is_oos": false
         }
       ]
@@ -1081,6 +1125,17 @@
           "rating": 4.7,
           "review_count": 272,
           "is_oos": false
+        },
+        {
+          "date": "2026-05-25",
+          "bsr_main": null,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": null,
+          "rating": null,
+          "review_count": null,
+          "is_oos": false
         }
       ]
     },
@@ -1299,6 +1354,17 @@
           "buy_box_price": 29.99,
           "rating": 4.8,
           "review_count": 130,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-25",
+          "bsr_main": null,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": null,
+          "rating": null,
+          "review_count": null,
           "is_oos": false
         }
       ]
@@ -1519,6 +1585,17 @@
           "rating": 4.2,
           "review_count": 277,
           "is_oos": false
+        },
+        {
+          "date": "2026-05-25",
+          "bsr_main": null,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": null,
+          "rating": null,
+          "review_count": null,
+          "is_oos": false
         }
       ]
     },
@@ -1737,6 +1814,17 @@
           "buy_box_price": 29.74,
           "rating": 4.5,
           "review_count": 2863,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-25",
+          "bsr_main": null,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": null,
+          "rating": null,
+          "review_count": null,
           "is_oos": false
         }
       ]
@@ -1957,6 +2045,17 @@
           "rating": 4.2,
           "review_count": 1915,
           "is_oos": false
+        },
+        {
+          "date": "2026-05-25",
+          "bsr_main": null,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": null,
+          "rating": null,
+          "review_count": null,
+          "is_oos": false
         }
       ]
     },
@@ -2175,6 +2274,17 @@
           "buy_box_price": 29.99,
           "rating": 4.3,
           "review_count": 1040,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-25",
+          "bsr_main": null,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": null,
+          "rating": null,
+          "review_count": null,
           "is_oos": false
         }
       ]
@@ -2395,6 +2505,17 @@
           "rating": 4.2,
           "review_count": 308,
           "is_oos": false
+        },
+        {
+          "date": "2026-05-25",
+          "bsr_main": null,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": null,
+          "rating": null,
+          "review_count": null,
+          "is_oos": false
         }
       ]
     },
@@ -2613,6 +2734,17 @@
           "buy_box_price": 59.99,
           "rating": 4.3,
           "review_count": 2850,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-25",
+          "bsr_main": null,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": null,
+          "rating": null,
+          "review_count": null,
           "is_oos": false
         }
       ]
@@ -2833,6 +2965,17 @@
           "rating": 4.6,
           "review_count": 44,
           "is_oos": false
+        },
+        {
+          "date": "2026-05-25",
+          "bsr_main": null,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": null,
+          "rating": null,
+          "review_count": null,
+          "is_oos": false
         }
       ]
     },
@@ -3051,6 +3194,17 @@
           "buy_box_price": 24.99,
           "rating": 4.2,
           "review_count": 114,
+          "is_oos": false
+        },
+        {
+          "date": "2026-05-25",
+          "bsr_main": null,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": null,
+          "rating": null,
+          "review_count": null,
           "is_oos": false
         }
       ]
