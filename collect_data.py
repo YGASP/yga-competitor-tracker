@@ -48,22 +48,45 @@ ASINS = [
 ]
 
 # ─── HTML PARSERS ─────────────────────────────────────────────────────────────
-def _extract_bsr(soup) -> int | None:
-    # Search any table row whose th/td contains "Best Sellers Rank"
+def _extract_bsr_all(soup) -> tuple[int | None, int | None, str | None, dict]:
+    """Returns (main_bsr, sub_bsr, sub_name, all_subcats_dict)"""
+    main_bsr = None
+    sub_bsr  = None
+    sub_name = None
+    subcats  = {}
+
     for row in soup.find_all("tr"):
         cells = row.find_all(["th", "td"])
         if len(cells) >= 2 and "Best Sellers Rank" in cells[0].get_text():
-            m = re.search(r"#([\d,]+)", cells[1].get_text())
-            if m:
-                return int(m.group(1).replace(",", ""))
-    # Fallback: search any list item
+            items = cells[1].find_all("li")
+            for i, li in enumerate(items):
+                text = li.get_text(" ", strip=True)
+                m = re.search(r"#([\d,]+)", text)
+                if not m:
+                    continue
+                rank = int(m.group(1).replace(",", ""))
+                # Category name = text after "in "
+                cat_m = re.search(r"in\s+(.+?)(?:\s*\(|$)", text)
+                cat_name = cat_m.group(1).strip() if cat_m else f"cat{i}"
+                if i == 0:
+                    main_bsr = rank
+                else:
+                    subcats[cat_name] = rank
+                    if sub_bsr is None:
+                        sub_bsr  = rank
+                        sub_name = cat_name
+            return main_bsr, sub_bsr, sub_name, subcats
+
+    # Fallback: bullet list style
     for li in soup.find_all("li"):
         text = li.get_text(" ", strip=True)
         if "Best Sellers Rank" in text:
             m = re.search(r"#([\d,]+)", text)
             if m:
-                return int(m.group(1).replace(",", ""))
-    return None
+                main_bsr = int(m.group(1).replace(",", ""))
+            return main_bsr, None, None, {}
+
+    return None, None, None, {}
 
 
 def _extract_price(soup) -> float | None:
@@ -158,22 +181,24 @@ def scrape_asin(session, asin: str, brand: str) -> dict:
             print("     CAPTCHA not resolved, skipping.")
             return _empty_snapshot()
 
-        bsr    = _extract_bsr(soup)
-        price  = _extract_price(soup)
-        rating = _extract_rating(soup)
+        bsr_main, bsr_sub, sub_name, subcats = _extract_bsr_all(soup)
+        price   = _extract_price(soup)
+        rating  = _extract_rating(soup)
         reviews = _extract_reviews(soup)
         is_oos  = _extract_oos(soup)
 
         parts = []
-        if bsr:    parts.append(f"BSR #{bsr:,}")
-        if price:  parts.append(f"${price:.2f}")
-        if is_oos: parts.append("OOS")
+        if bsr_main: parts.append(f"BSR #{bsr_main:,}")
+        if bsr_sub:  parts.append(f"#{bsr_sub:,} in {sub_name}")
+        if price:    parts.append(f"${price:.2f}")
+        if is_oos:   parts.append("OOS")
         print(f"     OK  {' | '.join(parts) or 'no data found'}")
 
         return {
-            "date": TODAY, "bsr_main": bsr, "bsr_subcategory": None,
-            "subcategory_name": None, "bsr_subcats": {}, "buy_box_price": price,
-            "rating": rating, "review_count": reviews, "is_oos": is_oos,
+            "date": TODAY, "bsr_main": bsr_main, "bsr_subcategory": bsr_sub,
+            "subcategory_name": sub_name, "bsr_subcats": subcats,
+            "buy_box_price": price, "rating": rating,
+            "review_count": reviews, "is_oos": is_oos,
         }
 
     return _empty_snapshot()
