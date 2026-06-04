@@ -342,11 +342,11 @@
         },
         {
           "date": "2026-06-04",
-          "bsr_main": 12619,
-          "bsr_subcategory": 50,
+          "bsr_main": 11390,
+          "bsr_subcategory": 45,
           "subcategory_name": "Basketballs",
           "bsr_subcats": {
-            "Basketballs": 50
+            "Basketballs": 45
           },
           "buy_box_price": 29.99,
           "rating": 4.9,
@@ -697,7 +697,7 @@
         },
         {
           "date": "2026-06-04",
-          "bsr_main": 2233,
+          "bsr_main": 2731,
           "bsr_subcategory": 11,
           "subcategory_name": "Basketballs",
           "bsr_subcats": {
@@ -1044,9 +1044,9 @@
           "bsr_subcategory": null,
           "subcategory_name": null,
           "bsr_subcats": {},
-          "buy_box_price": null,
-          "rating": null,
-          "review_count": null,
+          "buy_box_price": 29.99,
+          "rating": 4.6,
+          "review_count": 166,
           "is_oos": false
         }
       ]
