@@ -394,13 +394,13 @@
         },
         {
           "date": "2026-06-08",
-          "bsr_main": 11473,
+          "bsr_main": 11472,
           "bsr_subcategory": 42,
           "subcategory_name": "Basketballs",
           "bsr_subcats": {
             "Basketballs": 42
           },
-          "buy_box_price": 49.99,
+          "buy_box_price": 31.99,
           "rating": 4.9,
           "review_count": 94,
           "is_oos": false
@@ -809,7 +809,7 @@
           },
           "buy_box_price": 34.97,
           "rating": 4.5,
-          "review_count": 784,
+          "review_count": 785,
           "is_oos": false
         }
       ]
