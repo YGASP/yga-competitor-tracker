@@ -411,9 +411,9 @@
           "bsr_subcategory": null,
           "subcategory_name": null,
           "bsr_subcats": {},
-          "buy_box_price": 31.99,
-          "rating": 4.9,
-          "review_count": 94,
+          "buy_box_price": null,
+          "rating": null,
+          "review_count": null,
           "is_oos": false
         }
       ]
@@ -2027,9 +2027,9 @@
           "bsr_subcategory": null,
           "subcategory_name": null,
           "bsr_subcats": {},
-          "buy_box_price": null,
-          "rating": null,
-          "review_count": null,
+          "buy_box_price": 16.88,
+          "rating": 4.7,
+          "review_count": 289,
           "is_oos": false
         }
       ]
@@ -3631,9 +3631,9 @@
           "bsr_subcategory": null,
           "subcategory_name": null,
           "bsr_subcats": {},
-          "buy_box_price": null,
-          "rating": null,
-          "review_count": null,
+          "buy_box_price": 32.39,
+          "rating": 4.2,
+          "review_count": 1836,
           "is_oos": false
         }
       ]
