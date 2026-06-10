@@ -418,11 +418,11 @@
         },
         {
           "date": "2026-06-10",
-          "bsr_main": 11192,
-          "bsr_subcategory": 44,
+          "bsr_main": 10862,
+          "bsr_subcategory": 45,
           "subcategory_name": "Basketballs",
           "bsr_subcats": {
-            "Basketballs": 44
+            "Basketballs": 45
           },
           "buy_box_price": 31.99,
           "rating": 4.9,
@@ -849,7 +849,7 @@
         },
         {
           "date": "2026-06-10",
-          "bsr_main": 3435,
+          "bsr_main": 3449,
           "bsr_subcategory": 14,
           "subcategory_name": "Basketballs",
           "bsr_subcats": {
@@ -1265,8 +1265,8 @@
           "subcategory_name": null,
           "bsr_subcats": {},
           "buy_box_price": null,
-          "rating": null,
-          "review_count": null,
+          "rating": 4.6,
+          "review_count": 170,
           "is_oos": false
         }
       ]
@@ -3322,9 +3322,9 @@
           "bsr_subcategory": null,
           "subcategory_name": null,
           "bsr_subcats": {},
-          "buy_box_price": null,
-          "rating": null,
-          "review_count": null,
+          "buy_box_price": 29.99,
+          "rating": 4.5,
+          "review_count": 2908,
           "is_oos": false
         }
       ]
@@ -4146,7 +4146,7 @@
           "bsr_subcategory": null,
           "subcategory_name": null,
           "bsr_subcats": {},
-          "buy_box_price": 27.99,
+          "buy_box_price": null,
           "rating": 4.3,
           "review_count": 1080,
           "is_oos": false
@@ -5383,8 +5383,8 @@
           "subcategory_name": null,
           "bsr_subcats": {},
           "buy_box_price": null,
-          "rating": null,
-          "review_count": null,
+          "rating": 4.6,
+          "review_count": 46,
           "is_oos": false
         }
       ]
@@ -5795,8 +5795,8 @@
           "subcategory_name": null,
           "bsr_subcats": {},
           "buy_box_price": null,
-          "rating": null,
-          "review_count": null,
+          "rating": 4.2,
+          "review_count": 117,
           "is_oos": false
         }
       ]
