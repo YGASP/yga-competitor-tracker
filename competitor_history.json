@@ -849,13 +849,15 @@
         },
         {
           "date": "2026-06-10",
-          "bsr_main": null,
-          "bsr_subcategory": null,
-          "subcategory_name": null,
-          "bsr_subcats": {},
-          "buy_box_price": null,
-          "rating": null,
-          "review_count": null,
+          "bsr_main": 3448,
+          "bsr_subcategory": 14,
+          "subcategory_name": "Basketballs",
+          "bsr_subcats": {
+            "Basketballs": 14
+          },
+          "buy_box_price": 34.97,
+          "rating": 4.5,
+          "review_count": 786,
           "is_oos": false
         }
       ]
@@ -1263,8 +1265,8 @@
           "subcategory_name": null,
           "bsr_subcats": {},
           "buy_box_price": null,
-          "rating": null,
-          "review_count": null,
+          "rating": 4.6,
+          "review_count": 171,
           "is_oos": false
         }
       ]
@@ -2497,8 +2499,8 @@
           "subcategory_name": null,
           "bsr_subcats": {},
           "buy_box_price": null,
-          "rating": null,
-          "review_count": null,
+          "rating": 4.8,
+          "review_count": 160,
           "is_oos": false
         }
       ]
@@ -3732,9 +3734,9 @@
           "bsr_subcategory": null,
           "subcategory_name": null,
           "bsr_subcats": {},
-          "buy_box_price": null,
-          "rating": null,
-          "review_count": null,
+          "buy_box_price": 32.39,
+          "rating": 4.2,
+          "review_count": 1837,
           "is_oos": false
         }
       ]
@@ -4144,9 +4146,9 @@
           "bsr_subcategory": null,
           "subcategory_name": null,
           "bsr_subcats": {},
-          "buy_box_price": null,
-          "rating": null,
-          "review_count": null,
+          "buy_box_price": 27.99,
+          "rating": 4.3,
+          "review_count": 1081,
           "is_oos": false
         }
       ]
@@ -4556,9 +4558,9 @@
           "bsr_subcategory": null,
           "subcategory_name": null,
           "bsr_subcats": {},
-          "buy_box_price": 59.99,
-          "rating": 4.3,
-          "review_count": 323,
+          "buy_box_price": null,
+          "rating": null,
+          "review_count": null,
           "is_oos": false
         }
       ]
@@ -4968,9 +4970,9 @@
           "bsr_subcategory": null,
           "subcategory_name": null,
           "bsr_subcats": {},
-          "buy_box_price": 42.99,
-          "rating": 4.3,
-          "review_count": 2893,
+          "buy_box_price": null,
+          "rating": null,
+          "review_count": null,
           "is_oos": false
         }
       ]
@@ -5380,9 +5382,9 @@
           "bsr_subcategory": null,
           "subcategory_name": null,
           "bsr_subcats": {},
-          "buy_box_price": null,
-          "rating": null,
-          "review_count": null,
+          "buy_box_price": 26.99,
+          "rating": 4.6,
+          "review_count": 46,
           "is_oos": false
         }
       ]
