@@ -441,6 +441,19 @@
           "rating": 4.9,
           "review_count": 96,
           "is_oos": false
+        },
+        {
+          "date": "2026-06-12",
+          "bsr_main": 13850,
+          "bsr_subcategory": 47,
+          "subcategory_name": "Basketballs",
+          "bsr_subcats": {
+            "Basketballs": 47
+          },
+          "buy_box_price": 31.99,
+          "rating": 4.9,
+          "review_count": 96,
+          "is_oos": false
         }
       ]
     },
@@ -883,6 +896,19 @@
           "rating": 4.5,
           "review_count": 786,
           "is_oos": false
+        },
+        {
+          "date": "2026-06-12",
+          "bsr_main": 3380,
+          "bsr_subcategory": 14,
+          "subcategory_name": "Basketballs",
+          "bsr_subcats": {
+            "Basketballs": 14
+          },
+          "buy_box_price": 34.97,
+          "rating": 4.5,
+          "review_count": 790,
+          "is_oos": false
         }
       ]
     },
@@ -1304,6 +1330,17 @@
           "buy_box_price": 29.99,
           "rating": 4.6,
           "review_count": 171,
+          "is_oos": false
+        },
+        {
+          "date": "2026-06-12",
+          "bsr_main": null,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": null,
+          "rating": null,
+          "review_count": null,
           "is_oos": false
         }
       ]
@@ -1727,6 +1764,17 @@
           "buy_box_price": 29.99,
           "rating": 4.7,
           "review_count": 340,
+          "is_oos": false
+        },
+        {
+          "date": "2026-06-12",
+          "bsr_main": null,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": 29.99,
+          "rating": 4.7,
+          "review_count": 342,
           "is_oos": false
         }
       ]
@@ -2153,6 +2201,17 @@
           "rating": 4.7,
           "review_count": 292,
           "is_oos": false
+        },
+        {
+          "date": "2026-06-12",
+          "bsr_main": null,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": null,
+          "rating": null,
+          "review_count": null,
+          "is_oos": false
         }
       ]
     },
@@ -2578,6 +2637,17 @@
           "rating": 4.8,
           "review_count": 160,
           "is_oos": false
+        },
+        {
+          "date": "2026-06-12",
+          "bsr_main": null,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": null,
+          "rating": null,
+          "review_count": null,
+          "is_oos": false
         }
       ]
     },
@@ -2993,6 +3063,17 @@
         },
         {
           "date": "2026-06-11",
+          "bsr_main": null,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": null,
+          "rating": null,
+          "review_count": null,
+          "is_oos": false
+        },
+        {
+          "date": "2026-06-12",
           "bsr_main": null,
           "bsr_subcategory": null,
           "subcategory_name": null,
@@ -3426,6 +3507,17 @@
           "rating": 4.5,
           "review_count": 2904,
           "is_oos": false
+        },
+        {
+          "date": "2026-06-12",
+          "bsr_main": null,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": null,
+          "rating": null,
+          "review_count": null,
+          "is_oos": false
         }
       ]
     },
@@ -3849,6 +3941,17 @@
           },
           "buy_box_price": 32.39,
           "rating": 4.3,
+          "review_count": 1840,
+          "is_oos": false
+        },
+        {
+          "date": "2026-06-12",
+          "bsr_main": null,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": 32.39,
+          "rating": 4.2,
           "review_count": 1840,
           "is_oos": false
         }
@@ -4276,6 +4379,17 @@
           "rating": 4.3,
           "review_count": 1083,
           "is_oos": false
+        },
+        {
+          "date": "2026-06-12",
+          "bsr_main": null,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": 27.99,
+          "rating": 4.3,
+          "review_count": 1086,
+          "is_oos": false
         }
       ]
     },
@@ -4700,6 +4814,17 @@
           "buy_box_price": 59.99,
           "rating": 4.3,
           "review_count": 323,
+          "is_oos": false
+        },
+        {
+          "date": "2026-06-12",
+          "bsr_main": null,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": null,
+          "rating": null,
+          "review_count": null,
           "is_oos": false
         }
       ]
@@ -5126,6 +5251,17 @@
           "rating": 4.3,
           "review_count": 2897,
           "is_oos": false
+        },
+        {
+          "date": "2026-06-12",
+          "bsr_main": null,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": null,
+          "rating": null,
+          "review_count": null,
+          "is_oos": false
         }
       ]
     },
@@ -5551,6 +5687,17 @@
           "rating": 4.6,
           "review_count": 46,
           "is_oos": false
+        },
+        {
+          "date": "2026-06-12",
+          "bsr_main": null,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": 26.99,
+          "rating": 4.6,
+          "review_count": 47,
+          "is_oos": false
         }
       ]
     },
@@ -5973,6 +6120,17 @@
             "Pedestal Punching Bags": 20
           },
           "buy_box_price": 26.99,
+          "rating": 4.2,
+          "review_count": 117,
+          "is_oos": false
+        },
+        {
+          "date": "2026-06-12",
+          "bsr_main": null,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": null,
           "rating": 4.2,
           "review_count": 117,
           "is_oos": false
