@@ -580,6 +580,19 @@
           "rating": 4.9,
           "review_count": 106,
           "is_oos": false
+        },
+        {
+          "date": "2026-06-23",
+          "bsr_main": 14272,
+          "bsr_subcategory": 47,
+          "subcategory_name": "Basketballs",
+          "bsr_subcats": {
+            "Basketballs": 47
+          },
+          "buy_box_price": 29.99,
+          "rating": 4.9,
+          "review_count": 106,
+          "is_oos": false
         }
       ]
     },
@@ -1161,6 +1174,19 @@
           "rating": 4.5,
           "review_count": 782,
           "is_oos": false
+        },
+        {
+          "date": "2026-06-23",
+          "bsr_main": 4155,
+          "bsr_subcategory": 14,
+          "subcategory_name": "Basketballs",
+          "bsr_subcats": {
+            "Basketballs": 14
+          },
+          "buy_box_price": 34.97,
+          "rating": 4.5,
+          "review_count": 782,
+          "is_oos": false
         }
       ]
     },
@@ -1715,6 +1741,19 @@
           "subcategory_name": "Basketballs",
           "bsr_subcats": {
             "Basketballs": 84
+          },
+          "buy_box_price": 29.99,
+          "rating": 4.6,
+          "review_count": 174,
+          "is_oos": false
+        },
+        {
+          "date": "2026-06-23",
+          "bsr_main": 28597,
+          "bsr_subcategory": 76,
+          "subcategory_name": "Basketballs",
+          "bsr_subcats": {
+            "Basketballs": 76
           },
           "buy_box_price": 29.99,
           "rating": 4.6,
@@ -2275,6 +2314,19 @@
           "subcategory_name": "Basketballs",
           "bsr_subcats": {
             "Basketballs": 56
+          },
+          "buy_box_price": 29.99,
+          "rating": 4.6,
+          "review_count": 328,
+          "is_oos": false
+        },
+        {
+          "date": "2026-06-23",
+          "bsr_main": 14776,
+          "bsr_subcategory": 53,
+          "subcategory_name": "Basketballs",
+          "bsr_subcats": {
+            "Basketballs": 53
           },
           "buy_box_price": 29.99,
           "rating": 4.6,
@@ -2842,6 +2894,19 @@
           "rating": 4.7,
           "review_count": 301,
           "is_oos": false
+        },
+        {
+          "date": "2026-06-23",
+          "bsr_main": 5771,
+          "bsr_subcategory": 16,
+          "subcategory_name": "Basketballs",
+          "bsr_subcats": {
+            "Basketballs": 16
+          },
+          "buy_box_price": 15.18,
+          "rating": 4.7,
+          "review_count": 302,
+          "is_oos": false
         }
       ]
     },
@@ -3404,6 +3469,19 @@
           "rating": 4.8,
           "review_count": 121,
           "is_oos": false
+        },
+        {
+          "date": "2026-06-23",
+          "bsr_main": 8338,
+          "bsr_subcategory": 29,
+          "subcategory_name": "Basketballs",
+          "bsr_subcats": {
+            "Basketballs": 29
+          },
+          "buy_box_price": 29.99,
+          "rating": 4.8,
+          "review_count": 122,
+          "is_oos": false
         }
       ]
     },
@@ -3940,6 +4018,17 @@
         },
         {
           "date": "2026-06-22",
+          "bsr_main": null,
+          "bsr_subcategory": null,
+          "subcategory_name": null,
+          "bsr_subcats": {},
+          "buy_box_price": null,
+          "rating": null,
+          "review_count": null,
+          "is_oos": false
+        },
+        {
+          "date": "2026-06-23",
           "bsr_main": null,
           "bsr_subcategory": null,
           "subcategory_name": null,
@@ -4510,6 +4599,19 @@
           "rating": 4.5,
           "review_count": 2928,
           "is_oos": false
+        },
+        {
+          "date": "2026-06-23",
+          "bsr_main": 2332,
+          "bsr_subcategory": 1,
+          "subcategory_name": "Pedestal Punching Bags",
+          "bsr_subcats": {
+            "Pedestal Punching Bags": 1
+          },
+          "buy_box_price": 28.49,
+          "rating": 4.5,
+          "review_count": 2930,
+          "is_oos": false
         }
       ]
     },
@@ -5071,6 +5173,19 @@
           "buy_box_price": 32.39,
           "rating": 4.2,
           "review_count": 1861,
+          "is_oos": false
+        },
+        {
+          "date": "2026-06-23",
+          "bsr_main": 15299,
+          "bsr_subcategory": 3,
+          "subcategory_name": "Focus Punching Bags",
+          "bsr_subcats": {
+            "Focus Punching Bags": 3
+          },
+          "buy_box_price": 33.24,
+          "rating": 4.2,
+          "review_count": 1862,
           "is_oos": false
         }
       ]
@@ -5634,6 +5749,19 @@
           "rating": 4.3,
           "review_count": 1104,
           "is_oos": false
+        },
+        {
+          "date": "2026-06-23",
+          "bsr_main": 30950,
+          "bsr_subcategory": 8,
+          "subcategory_name": "Focus Punching Bags",
+          "bsr_subcats": {
+            "Focus Punching Bags": 8
+          },
+          "buy_box_price": 27.99,
+          "rating": 4.3,
+          "review_count": 1107,
+          "is_oos": false
         }
       ]
     },
@@ -6193,6 +6321,19 @@
             "Focus Punching Bags": 2
           },
           "buy_box_price": 59.99,
+          "rating": 4.2,
+          "review_count": 328,
+          "is_oos": false
+        },
+        {
+          "date": "2026-06-23",
+          "bsr_main": 7173,
+          "bsr_subcategory": 2,
+          "subcategory_name": "Focus Punching Bags",
+          "bsr_subcats": {
+            "Focus Punching Bags": 2
+          },
+          "buy_box_price": 50.99,
           "rating": 4.2,
           "review_count": 328,
           "is_oos": false
@@ -6758,6 +6899,19 @@
           "rating": 4.2,
           "review_count": 2888,
           "is_oos": false
+        },
+        {
+          "date": "2026-06-23",
+          "bsr_main": 3169,
+          "bsr_subcategory": 1,
+          "subcategory_name": "Heavy Punching Bags",
+          "bsr_subcats": {
+            "Heavy Punching Bags": 1
+          },
+          "buy_box_price": 39.55,
+          "rating": 4.2,
+          "review_count": 2888,
+          "is_oos": false
         }
       ]
     },
@@ -7315,6 +7469,19 @@
           "subcategory_name": "Pedestal Punching Bags",
           "bsr_subcats": {
             "Pedestal Punching Bags": 18
+          },
+          "buy_box_price": 28.99,
+          "rating": 4.5,
+          "review_count": 50,
+          "is_oos": false
+        },
+        {
+          "date": "2026-06-23",
+          "bsr_main": 62267,
+          "bsr_subcategory": 22,
+          "subcategory_name": "Pedestal Punching Bags",
+          "bsr_subcats": {
+            "Pedestal Punching Bags": 22
           },
           "buy_box_price": 28.99,
           "rating": 4.5,
@@ -7881,6 +8048,19 @@
           "buy_box_price": 26.99,
           "rating": 4.2,
           "review_count": 121,
+          "is_oos": false
+        },
+        {
+          "date": "2026-06-23",
+          "bsr_main": 55467,
+          "bsr_subcategory": 20,
+          "subcategory_name": "Pedestal Punching Bags",
+          "bsr_subcats": {
+            "Pedestal Punching Bags": 20
+          },
+          "buy_box_price": 22.94,
+          "rating": 4.2,
+          "review_count": 122,
           "is_oos": false
         }
       ]
